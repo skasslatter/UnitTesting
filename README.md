@@ -8,4 +8,5 @@ Let's dive in!
 ## Contents
 
 1. [An introduction to testing](testing-CH1-testing-introduction.md)
+2. [Understanding the basic test file](testing-CH2-understanding-test-file.md)
 
