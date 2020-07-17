@@ -68,11 +68,11 @@ Running `ng test` will run the tests in watch mode, meaning that every time you 
 
   The single run flag will make the test only run once.
 
-- --auto-watch/ --no-auto-watch
+- `--auto-watch` / `--no-auto-watch`
 
   Enable or disable watching files and executing the tests whenever one of these files changes.
 
-- --code-coverage
+- `--code-coverage`
 
   The code coverage flag will create a report in html. It will display the report either on your browser or save it to a folder in your project called `coverage/index.html`. This report will cover the percentage of code you have covered with your test. Ofcourse 100% code coverage seems appeling but might not always be ideal. 
   The pit of overtesting is a easy one to fall into and can end up taking up alot of time. Ofcourse overtesting your code is better than undertesting it. So it important to know what to test but we will cover this in a later paragraph.
