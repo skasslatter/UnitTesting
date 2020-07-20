@@ -14,3 +14,9 @@ Let's dive in!
 5. [Async Testing](testing-CH5-async.md)
 
 ## Assignments
+
+#### App component:
+- Create a test to check if the app has the title `testing-assignment`
+- Create a test to check if the title get rendered and contains `testing-assignment app is running!`
+
+

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "testing-assignment"
+    }
+  },
+  "defaultProject": "testing-assignment",
+  "cli": {
+    "analytics": false
+  }
 }
