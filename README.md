@@ -12,8 +12,11 @@ Let's dive in!
 3. [Mocking](testing-CH3-mocking.md)
 4. [HTTP mocking](testing-CH4-http-mocking.md)
 5. [Async Testing](testing-CH5-async.md)
+6. [Testing elements](testing-CH6-elements.md)
 
 ## Assignments
+
+To start on your assignement please [fork](https://guides.github.com/activities/forking/) this project so that you have your own copy of it.
 
 #### App component:
 - Create a `it` to check if the app has the title `testing-assignment`.
