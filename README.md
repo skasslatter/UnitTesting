@@ -10,4 +10,6 @@ Let's dive in!
 1. [An introduction to testing](testing-CH1-testing-introduction.md)
 2. [Understanding the basic test file](testing-CH2-understanding-test-file.md)
 3. [Mocking](testing-CH3-mocking.md)
+4. [HTTP mocking](testing-CH4-http-mocking.md)
+5. [Async Testing](testing-CH4-async.md)
 
