@@ -1,4 +1,4 @@
-# An introduction to testing.
+# An introduction to testing
 
 ## What is karma?
 
