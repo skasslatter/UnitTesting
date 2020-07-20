@@ -38,7 +38,7 @@ In this case we create a file called HomeComponent. As you can see the file is h
 
 ## What is TestBed ?
 
-We are still writing our test with the jasmine framework but angular has introduces the concept of the TestBed.
+We are still writing our test with the jasmine framework but angular has introduced the concept of the TestBed.
 The general concept is that TestBed allows you to set up an independent module, just like the `@NgModule` that lives in the **app.module.ts** file, for testing a specific component. This is an isolated testing environment for the component you are testing. A unit test focuses on testing one chunk of code in isolation, not how it integrates with any other parts of the code, so it makes sense to create an environment where we get rid of any outside influences.
 
 This part of our test file is creating the above mentioned module:
@@ -69,7 +69,7 @@ TestBed.configureTestingModule({
 ```
 ## Function rundown
 
-So lets go through everything that is going on in the testfile
+So lets go through everything that is going on in the test file
 
 We first `describe` our test suite giving it a title of `Component:HomeComponent` Inside of that test suite, we add our `beforeEach` blocks. The first one is what configures `TestBed for us with the appropriate dependencies required to run the component.
 
@@ -99,12 +99,12 @@ We first `describe` our test suite giving it a title of `Component:HomeComponent
 
 ## Extra functions
 
--  The `afterEach` will run after the test has completed. This can be used to clear data or processes at the end of a `it` so every test will start 'fresh'.
-- The `afterAll` will run after all the `it` have been completed. This can be used to clear data or processes at the end all your test in that file so every test will start 'fresh'.
-- The `beforeAll` will run before all the test in that file. 
-- The `toEqual` check if the variable equals the given paramator. E.g. `expect(myArray).toEqual([1,2,3])`
-- The `toBeFalsy` checks if the variable is false
-- The `toBeNull` check if the variable is null
+-  The `afterEach` method will run after the test has completed. This can be used to clear data or processes at the end of a `it` so every test will start 'fresh'.
+- The `afterAll` method will run after all the `it` have been completed. This can be used to clear data or processes at the end all your test in that file so every test will start 'fresh'.
+- The `beforeAll` method will run before all the test in that file. 
+- The `toEqual` method check if the variable equals the given paramator. E.g. `expect(myArray).toEqual([1,2,3])`
+- The `toBeFalsy` method checks if the variable is false
+- The `toBeNull` method check if the variable is null
 
 For any other methods you can refrence the [Jamine documentation](https://jasmine.github.io/)
 
@@ -118,13 +118,13 @@ Describe blocks can also be nested. If you want for example different `beforeEac
 
 ```javascript
 describe('AppComponent', () => {
-    let mockCarBrandService = jasmine.createSpyObj('carBrandService', ['findAll']);
+    let mockConsoleBrandService = jasmine.createSpyObj('consoleBrandService', ['findAll']);
 
     describe('Happy path', () => {
         beforeEach(() => {
             mockCarBrandService.findAll.and.returnValue(Observable.of([
-                { name: 'Mazda', country: 'Japan' },
-                { name: 'BMW', country: 'Germany' }
+                { name: 'Playstation', country: 'Japan' },
+                { name: 'XBOX', country: 'US' }
             ]));
         });
 
@@ -133,7 +133,7 @@ describe('AppComponent', () => {
     });
     
     describe('Error path', () => {
-        mockCarBrandService.findAll.and.returnValue(Observable.throw('Error'));
+        mockConsoleBrandService.findAll.and.returnValue(Observable.throw('Error'));
 
         it(...);
         ...
