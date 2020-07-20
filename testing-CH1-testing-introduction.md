@@ -110,6 +110,12 @@ The most common one in that case is [Cypress](https://www.cypress.io/how-it-work
 
 The most difficult thing about being good at testing is knowing what to test. Like i mentioned in a previous paragraph, Its easy to overtest but its better than undertesting. Overtesting can cost you alot of time without the benefit of winning that time back later. 
 
+For starters, you don’t have access to private and protected variables/functions, so all you can do is test the public ones. All variables that are accessed by the view should be public, so those are the ones you can use for your tests. The constructor and all lifecycle events can be called as well as they are public. You should never ever set a variable or function to public in order to test it. If you can’t test it because it’s private, you’re doing something wrong. You should be able to get to it through other functions.
+
+The code coverage report can help you find functions that aren’t fully tested yet. However, your goal shouldn’t be to get a 100% coverage. Getting a 100% isn’t that hard, simply calling all functions with some different inputs will get you there. It won’t mean that your code is fully tested. To give you an example, suppose you have a function that sorts a list. You write some tests with different inputs so all branches are covered and you get a 100% coverage. The ordering of the list could still be completely wrong and not what you expect, although it’s fully covered. By using `expect` to verify that the output is correct, you’ll be doing a way better job. Even then there may be scenarios that aren’t tested despite the coverage report stating that part of the code is covered. So try to think of the various possible scenarios (both success and error scenarios) and translate those to tests.
+
+Also try to cover other paths than just the happy paths!
+
 #### What to test
 
 - **Test the most common case of everything you can.**
