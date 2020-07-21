@@ -4,8 +4,7 @@ import { Car } from '../../model/car/car.model';
 @Injectable()
 export class CarService {
 
-  createCar(make: string = 'unknown', model: string = 'unknown',
-            year: number = 1900, numWheels: number = 4): Car {
+  createCar(make: string, model: string, year: number, numWheels: number): Car {
     return new Car(make, model, year, numWheels);
   }
 

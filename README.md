@@ -40,11 +40,9 @@ You are not allowed to adjust the HTML or TS files with the exception of debuggi
 #### Car model
 - Study `car.model.ts` and create a test suite for it.
 - Create a `beforeEach()` that creates a new `Car`.
-- Create 2 `it` that checks the output of the `description()` and `getAge()*` function.
+- Create 2 `it` that checks the output of the `description()` and `getAge()` function.
 - Create a comment in the `.spec` explaining why you should or shouldn't test the `getWheels()` function 
 - Create a `AfterEach()` that makes car `null`.
-
-* Keep the aging of your code in mind when writing this test
 
 #### Car component:
 - Study `car.component.ts` and create a test suite for it.
