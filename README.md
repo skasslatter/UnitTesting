@@ -17,30 +17,34 @@ Let's dive in!
 ## Assignments
 
 To start on your assignement please [fork](https://guides.github.com/activities/forking/) this project so that you have your own copy of it.
+You are not allowed to adjust the HTML or TS files with the exception of debugging needs.
 
 #### App component:
 - Create a `it` to check if the app has the title `testing-assignment`.
-- Create a `it` to check if the title get rendered and contains `testing-assignment app is running!`.
+- Create a `it` to check if the `span` on line 333 contains `testing-assignment app is running!`.
 
 #### City component
 - Create the basic `.spec` file for the component.
 - Provide the right declaration in the `configureTestingModule`.
 - Create a `it` to check if the component gets created.
 - Create a `it` to check if the city variable gets the right value from `ngOnInit`.
-- Create a `it` where you set the city and check if it equal to your set name.
+- Create a `it` where you set the city and check if it's equal to your set name.
 - Create a `it` to check if the city name get rendered on the page.
 
 #### Person model:
 - Study `person.model.ts` and create a test suite for it.
 - Create a `beforeEach()` that creates a new `Person`.
-- Create a `it` that check the output of the `sayHello()` function.
+- Create a `it` that checks the output of the `sayHello()` function.
 - Create a `AfterEach()` that makes person `null`.
 
 #### Car model
 - Study `car.model.ts` and create a test suite for it.
 - Create a `beforeEach()` that creates a new `Car`.
-- Create a 2 `it` that check the output of the both functions function.
+- Create 2 `it` that checks the output of the `description()` and `getAge()*` function.
+- Create a comment in the `.spec` explaining why you should or shouldn't test the `getWheels()` function 
 - Create a `AfterEach()` that makes car `null`.
+
+* Keep the aging of your code in mind when writing this test
 
 #### Car component:
 - Study `car.component.ts` and create a test suite for it.
