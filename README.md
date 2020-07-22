@@ -1,4 +1,4 @@
-# Typescript
+# Unit Testing
 
 This block of your bootcamp will dive into the testing of your angular application with Karma.
 In this block you will learn what Karma is, what to test and what not to test and ofcourse how to create the actual test.
@@ -17,7 +17,7 @@ Let's dive in!
 ## Assignments
 
 To start on your assignement please [fork](https://guides.github.com/activities/forking/) this project so that you have your own copy of it.
-You are not allowed to adjust the HTML or TS files with the exception of debugging needs.
+You are not allowed to adjust the HTML or TS files except for debugging needs.
 
 #### App component:
 - Create a `it` to check if the app has the title `testing-assignment`.

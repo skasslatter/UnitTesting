@@ -36,6 +36,8 @@ describe('AppComponent', () => {
 });
 ```
 
+
+
 In the example above, you can see when the `AppComponent` would call consoleBrandService.findAll()`, instead of making a HTTP call, an Observable is returned with a list of console brands which is defined in the test itself. This is pretty cool, but also very error prone. If you forget to place a spy on a certain function, it will perform the actual call, possibly a HTTP call. That’s something we do not want at all.
 
 ## Mock classes
@@ -146,3 +148,9 @@ it('should find the console brand', () => {
 }); 
 ```
 
+## Last tip
+By chaining the spy with `and.callThrough()`, the spy will still track all calls to it but in addition it will delegate to the actual implementation.
+
+## Reading
+[Call through](https://hatoum.com/blog/2016/11/12/jasmine-unit-testing-dont-forget-to-callthrough)
+ 

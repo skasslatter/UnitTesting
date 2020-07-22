@@ -19,8 +19,8 @@ describe('CoursesService', () => {
     });
 
     // We inject our service (which imports the HttpClient) and the Test Controller
-    httpTestingController = TestBed.get(HttpTestingController);
-    service = TestBed.get(CoursesService);
+    httpTestingController = TestBed.inject(HttpTestingController);
+    service = TestBed.inject(CoursesService);
   });
 
   afterEach(() => {
