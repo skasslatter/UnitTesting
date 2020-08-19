@@ -1,6 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {SpyComponent} from './spy.component';
 import {City} from '../../model/city/city.model';
+import {By} from '@angular/platform-browser';
 
 describe('SpyComponent', () => {
   let component: SpyComponent;
@@ -38,5 +39,10 @@ describe('SpyComponent', () => {
     expect(component.cities.length).toEqual(4);
   });
 
-
+  it('should call the deleteCity() method when clicking on Delete', () => {
+    spyOn(component, 'deleteCity');
+    const deleteButton = fixture.debugElement.query(By.css('.btnDelete')).nativeElement;
+    deleteButton.click();
+    expect(component.deleteCity).toHaveBeenCalled();
+    });
 });
