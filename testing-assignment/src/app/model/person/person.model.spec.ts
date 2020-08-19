@@ -14,11 +14,8 @@ describe('Person', () => {
         Person
       ],
     }).compileComponents();
-  }));
-
-  beforeEach(() => {
     newPerson = new Person('John');
-  });
+  }));
 
   it('should return the correct person name', () => {
     expect(newPerson.sayHello()).toEqual('Hi, John');

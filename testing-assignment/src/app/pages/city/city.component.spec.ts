@@ -15,13 +15,10 @@ describe('CityComponent', () => {
         CityComponent
       ],
     }).compileComponents();
-  }));
-
-  beforeEach(() => {
     fixture = TestBed.createComponent(CityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }));
 
   it('should create the the component "CityComponent"', () => {
     expect(component).toBeTruthy();

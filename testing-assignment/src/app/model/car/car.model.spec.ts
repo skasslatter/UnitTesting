@@ -14,16 +14,13 @@ describe('Car', () => {
         Car
       ],
     }).compileComponents();
-  }));
-
-  beforeEach(() => {
     newCar = new Car(
       'Audi',
       'A3',
       2015,
       4,
     );
-  });
+  }));
 
   it('should return the correct description', () => {
     expect(newCar.description()).toEqual(`This is a Audi A3 from 2015 and it has 4 wheels`);

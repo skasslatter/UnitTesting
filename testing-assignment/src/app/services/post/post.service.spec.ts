@@ -1,6 +1,6 @@
 import {TestBed} from '@angular/core/testing';
 import {PostService} from './post.service';
-import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
+import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 
 describe('PostService', () => {
   let httpTestingController: HttpTestingController;
@@ -36,7 +36,7 @@ describe('PostService', () => {
     expect(service).toBeTruthy();
   });
 
-  fit('should return an Observable that matches the right data', () => {
+  it('should return an Observable that matches the right data', () => {
     service.getPosts().subscribe(post => {
       expect(post[0].title).toBe('Hello');
       expect(post[1].body).toBe('All good?');

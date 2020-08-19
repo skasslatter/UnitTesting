@@ -44,5 +44,5 @@ describe('SpyComponent', () => {
     const deleteButton = fixture.debugElement.query(By.css('.btnDelete')).nativeElement;
     deleteButton.click();
     expect(component.deleteCity).toHaveBeenCalled();
-    });
+  });
 });

@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CarComponent } from './car.component';
+import {CarComponent} from './car.component';
 import {By} from '@angular/platform-browser';
 
 describe('CarComponent', () => {
@@ -9,16 +9,13 @@ describe('CarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CarComponent ]
+      declarations: [CarComponent]
     })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
+      .compileComponents();
     fixture = TestBed.createComponent(CarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }));
 
   it('should create "CarComponent"', () => {
     expect(component).toBeTruthy();
