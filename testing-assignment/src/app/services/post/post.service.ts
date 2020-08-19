@@ -5,11 +5,11 @@ import { Post } from '../../model/post/post';
 
 @Injectable()
 export class PostService {
-  REST_API: string = 'https://jsonplaceholder.typicode.com/posts';
+  REST_API = 'https://jsonplaceholder.typicode.com/posts';
 
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.REST_API}`)
+    return this.http.get<Post[]>(`${this.REST_API}`);
   }
 }
