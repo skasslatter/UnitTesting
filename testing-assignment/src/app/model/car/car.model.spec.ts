@@ -27,7 +27,9 @@ describe('Car', () => {
   });
 
   it('should return the correct age', () => {
-    expect(newCar.getAge(newCar.year)).toEqual(5);
+    const age = newCar.year;
+    const today = new Date();
+    expect(newCar.getAge(newCar.year)).toEqual(today.getFullYear() - age);
   });
 
   afterEach(() => {
